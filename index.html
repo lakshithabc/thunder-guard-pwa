@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#10243a">
+  <meta name="description" content="Thunderstorm forecast risk for your location.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>THUNDER GUARD</title>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div class="mark">⚡</div>
+      <div><p class="eyebrow">WEATHER RISK ASSISTANT</p><h1>THUNDER GUARD</h1><p class="sub">Local thunderstorm forecast · 20 km area</p></div>
+    </header>
+    <section class="panel status-panel">
+      <div class="status-head"><span class="eyebrow">CURRENT FORECAST RISK</span><span id="updated" class="muted">Not checked yet</span></div>
+      <div class="risk-row"><div id="riskIcon" class="risk-icon">☀️</div><div><div id="riskLabel" class="risk-label">Not checked</div><div id="riskValue" class="risk-value">--%</div></div></div>
+      <p id="summary" class="summary">Allow location access to check the forecast around you.</p>
+      <button id="locateBtn" class="primary">Use my current location</button>
+      <p id="locationText" class="muted small">Location has not been shared.</p>
+    </section>
+    <section class="panel">
+      <div class="section-head"><h2>Next 6 hours</h2><span class="muted small">Forecast estimate</span></div>
+      <div id="hours" class="hours"><p class="muted">Check your location to load the forecast.</p></div>
+    </section>
+    <section class="panel note">
+      <strong>Important safety note</strong>
+      <p>This app displays forecast-based thunderstorm risk, not confirmed live lightning strikes. It is not a certified life-safety warning system. If you hear thunder, move indoors or into a substantial enclosed shelter immediately and follow official local warnings.</p>
+    </section>
+    <footer>Weather data: Open-Meteo · Free forecast service · Attribution required</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
